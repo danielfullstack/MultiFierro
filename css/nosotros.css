@@ -8,28 +8,32 @@ html, body{
   overflow-x: hidden;
 }
 
-
-/* ===== PORTADA NOSOTROS ===== */
 .pagina-nosotros .portada-nosotros{
   position: relative;
-
   width: 100%;
-  height: 650px;
-
+  min-height: 650px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
   overflow: hidden;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   animation: cambiarFondo 5s infinite;
+  padding: 20px;
 }
 
-/* ===== CAMBIO DE IMÁGENES ===== */
+.pagina-nosotros .texto-portada{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+  width: 90%;
+  max-width: 600px;
+}
+
 @keyframes cambiarFondo{
 
   0%{
@@ -54,40 +58,15 @@ body {
 }
 
 
-/* TEXTO DE PORTADA */
-.pagina-nosotros .texto-portada{
-  position: absolute;
-
-  top: 50%;
-  left: 80px;
-
-  transform: translateY(-50%);
-
-  z-index: 2;
-
-  text-align: left;
-  color: white;
-
-  max-width: 600px;
-
-  padding-left: 80px;
-  margin-left: 0;
-}
-
 
 .pagina-nosotros .portada-nosotros {
   padding-left: 20px;   
 }
-
-
-
 .pagina-nosotros .subtitulo {
   font-size: 20px;
   font-weight: bold;
   color: #e6b514;
 }
-
-
 .pagina-nosotros .titulo {
   font-size: 50px;
   margin: 10px 0;
@@ -95,14 +74,12 @@ body {
   font-weight: 800; 
 }
 
-
 .pagina-nosotros .descripcion-portada {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.6;
 }
-
 
 .pagina-nosotros .descripcion-secundaria {
   text-transform: lowercase;
@@ -116,7 +93,6 @@ body {
   font-weight: bold;
 }
 
-/* FILA 2 - TEXTO NEGRO CON S.O.L.D.A.D.U.R.A... EN NEGRITA */
 
 .pagina-nosotros .galeria-grid .card.card-color p {
   color: #000000;           
@@ -145,269 +121,190 @@ body {
   font-size: 18px;
 }
 
-
-.mision-vision-pilares {
+.mision-vision-pilares{
   background: linear-gradient(
     to right,
-    #f5d74f 0%,   
+    #f5d74f 0%,
     #f5d74f 33%,
-    #e6b514 33%,  
+    #e6b514 33%,
     #e6b514 66%,
-    #d4a500 66%,  
+    #d4a500 66%,
     #d4a500 100%
   );
-  padding: 10px 0px;
+
+  padding: 30px 20px;
   text-align: center;
+
 }
 
-.mision-vision-pilares .contenedor-seccion {
-  max-width: 1200px;
-  margin: 0 auto;
+.mision-vision-pilares .contenedor-seccion{
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 0; 
-  align-items: center; 
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
 }
 
-/* Bloque 1: Misión */
-.mision-vision-pilares .bloque:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-items: flex-start; 
-  text-align: left;
-  padding: 5px;
-  color: #060e7e;
-  
-}
-
-/* Bloque 2: Visión */
-.mision-vision-pilares .bloque:nth-child(2) {
+.mision-vision-pilares .bloque{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-  padding: 20px;
+  align-items: center;
+  text-align: center;
+  min-height: 350px;
+  padding: 40px 30px;
+  transition: 0.4s;
+}
+
+.mision-vision-pilares .bloque:hover{
+  transform: translateY(-10px);
+}
+
+.mision-vision-pilares .bloque img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+
+.mision-vision-pilares .bloque:hover img{
+  transform: rotate(5deg) scale(1.05);
+}
+
+.mision-vision-pilares .bloque h3{
+  font-size: 30px;
   color: #060e7e;
-}
-
-/* Bloque 3: Pilares */
-.mision-vision-pilares .bloque:nth-child(3) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-  padding: 20px;
-  color: #060e7e;
-}
-
-/* ===== Limitar ancho de los párrafos de todos los bloques ===== */
-.mision-vision-pilares .bloque p {
-  max-width: 300px;   
-  font-size: 16px;    
-  line-height: 1.4;  
-}
-
-.mision-vision-pilares .bloque h3 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #060e7e; 
   margin-bottom: 15px;
+  position: relative;
+}
+
+.mision-vision-pilares .bloque h3::after{
+  content: "/";
+  margin-left: 10px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.mision-vision-pilares .bloque:hover h3::after{
+  opacity: 1;
 }
 
 .mision-vision-pilares .bloque p,
-.mision-vision-pilares .bloque ul {
-  font-size: 18px;
+.mision-vision-pilares .bloque ul{
   color: #060e7e;
   line-height: 1.6;
-  text-align: left;
+  font-size: 17px;
+  text-align: center;
 }
 
-.mision-vision-pilares .bloque ul {
-  list-style-type: disc;
-  padding-left: 40px;
-}
-
-.mision-vision-pilares .bloque ul li {
-  margin-bottom: 8px;
-}
-
-/* ===== CONTENEDOR BLOQUE ===== */
-.mision-vision-pilares .bloque {
-  position: relative;
-  overflow: visible;
-  z-index: 1;
-}
-
-.mision-vision-pilares .icono {
-  z-index: 2;
-}
-
-.mision-vision-pilares .contenido {
-  position: relative;
-  z-index: 1;
-}
-
-/* ===== ICONO ENCIMA (CUBRE TODO) ===== */
-.mision-vision-pilares .icono {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4%;
-  height: 100%;
-  background: #e6b514; 
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  z-index: 2;
-  transition: 0.5s;
+.mision-vision-pilares .bloque ul{
+  list-style: none;
+  padding: 0;
 }
 
 
-.mision-vision-pilares .bloque {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
-  padding: 20px;
-  color: #060e7e;
-}
-
-/* ===== COLORES DIFERENTES PARA CADA BLOQUE ===== */
-
-
-.mision-vision-pilares .bloque:nth-child(1) .icono {
-  background: #f5d74f;
-}
-
-.mision-vision-pilares .bloque:nth-child(2) .icono {
-  background: #e6b514;
-}
-
-.mision-vision-pilares .bloque:nth-child(3) .icono {
-  background: #d4a500;
-}
-
-
-.mision-vision-pilares .icono img {
-  width: 170px;
-  height: 170px;
-}
-
-.mision-vision-pilares .bloque:nth-child(1) .icono img {
-  transform: translate(-10px, 10px); 
-}
-
-.mision-vision-pilares .bloque:nth-child(2) .icono img {
-  transform: translate(180px, 20px);
-}
-
-.mision-vision-pilares .bloque:nth-child(3) .icono img {
-  transform: translate(400px,110px);
-}
-
-
-
-/* ===== CONTENIDO OCULTO ===== */
-.mision-vision-pilares .contenido {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 0.5s;
-}
-
-/* ===== HOVER EFECTO ===== */
-.mision-vision-pilares .bloque:hover .icono {
-  opacity: 0;
-  visibility: hidden;  
-  pointer-events: none;
-}
-
-.mision-vision-pilares .bloque:hover .contenido {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-/* ===== POSICIÓN PERSONALIZADA DE CADA CONTENIDO ===== */
-
-.mision-vision-pilares .bloque:nth-child(1) .contenido {
-  transform: translate(-200px, -10px); 
-}
-
-.mision-vision-pilares .bloque:nth-child(2) .contenido {
-  transform: translate(20px, -10px); 
-}
-
-.mision-vision-pilares .bloque:nth-child(3) .contenido {
-  transform: translate(300px, -10px); 
-}
-
-
-
-
-.mision-vision-pilares .bloque:nth-child(1) .icono {
-  height: 120px;
-}
-
-.mision-vision-pilares .bloque:nth-child(2) .icono {
-  height: 120px;
-}
-
-.mision-vision-pilares .bloque:nth-child(3) .icono {
-  height: 90px; 
-}
-
-/* ===== GRID INTERCALADO ===== */
 .pagina-nosotros .galeria-grid{
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
-
   gap: 40px;
-
   width: 90%;
-
   margin: 80px auto;
 }
-
-
 .pagina-nosotros .galeria-grid .card{
   height: 350px;
-
   overflow: hidden;
-
   border-radius: 30px;
 }
-
-
 .pagina-nosotros .galeria-grid .card img{
   width: 100%;
   height: 100%;
-
   object-fit: cover;
-
   display: block;
-
   border-radius: 30px;
 }
 
 
 .pagina-nosotros .card-color{
   background: #f3efef;
-
   color: #060e7e;
-
   padding: 40px;
-
   border-radius: 30px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+
+@media (max-width: 768px) {
+
+  html, body{
+    overflow-x: hidden;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .pagina-nosotros .portada-nosotros{
+    min-height: 420px;
+    padding: 20px;
+  }
+
+  .pagina-nosotros .texto-portada{
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .pagina-nosotros .titulo{
+    font-size: 28px;
+  }
+
+  .pagina-nosotros .subtitulo{
+    font-size: 16px;
+  }
+
+  .pagina-nosotros .descripcion-portada{
+    font-size: 14px;
+  }
+
+  .pagina-nosotros .galeria-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pagina-nosotros .galeria-grid .card{
+    height: auto;
+  }
+
+  .pagina-nosotros .galeria-grid .card img{
+    height: 220px;
+  }
+
+  .mision-vision-pilares .contenedor-seccion{
+    grid-template-columns: 1fr;
+  }
+
+  .mision-vision-pilares .bloque{
+    padding: 30px 15px;
+    min-height: auto;
+  }
+
+  .mision-vision-pilares .bloque h3{
+    font-size: 24px;
+  }
+
+  .mision-vision-pilares .bloque p,
+  .mision-vision-pilares .bloque ul{
+    font-size: 15px;
+  }
+
+  .footer-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+}

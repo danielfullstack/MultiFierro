@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -7,40 +6,31 @@
 
   <title>Nosotros | MULTIFIERRO</title>
 
-  <!-- FUENTE -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/nosotros.css">
 
-  <!-- ICONO -->
   <link rel="icon" href="../img/logo_M.svg" type="image/x-icon">
 </head>
 
 <body class="pagina-nosotros">
-
-  <!-- ===== BARRA AZUL ===== -->
  
 
-  <!-- ===== HEADER ===== -->
   <header>
 
     <nav class="navbar">
 
       <div class="nav-container">
 
-        <!-- LOGO -->
         <div class="logo">
           <img src="../img/logo_blanco.png" alt="Logo MultiFierro">
         </div>
 
-        <!-- MENÚ HAMBURGUESA -->
         <div class="menu-toggle" id="menu-toggle">
           ☰
         </div>
 
-        <!-- MENÚ -->
         <ul class="nav-links" id="nav-links">
 
           <li><a href="../index.html">Inicio</a></li>
@@ -51,7 +41,6 @@
 
         </ul>
 
-        <!-- BUSCADOR -->
         <div class="nav-extra">
 
           <input type="text" placeholder="Buscar...">
@@ -65,7 +54,6 @@
 
   </header>
 
-  <!-- ===== PORTADA ===== -->
   <section class="portada-nosotros">
 
   
@@ -84,16 +72,13 @@
 
 </section>
 
-  <!-- ===== CONTENIDO ===== -->
 <section class="galeria-grid">
 
-  <!-- FILA 1 -->
-  <a href="#" class="card"
-  data-imagenes='["../img/nosotros1.png","../img/nosotros2.png","../img/nosotros3.png"]'>
+  <div class="card">
 
-    <img src="../img/nosotros1.png">
+  <img src="../img/nosotros1.png">
 
-  </a>
+</div>
 
   <div class="card card-color">
 
@@ -112,7 +97,6 @@
 
   </div>
 
-  <!-- FILA 2 -->
   <div class="card card-color">
 
     <p>
@@ -126,20 +110,17 @@
 
   </div>
 
-  <a href="#" class="card"
-  data-imagenes='["../img/nosotros4.png","../img/nosotros5.png","../img/nosotros6.png"]'>
+  <div class="card">
 
-    <img src="../img/nosotros4.png">
+  <img src="../img/nosotros4.png">
 
-  </a>
+</div>
 
-  <!-- FILA 3 -->
-  <a href="#" class="card"
-  data-imagenes='["../img/nosotros2.png","../img/nosotros4.png","../img/nosotros6.png"]'>
+  <div class="card">
 
-    <img src="../img/nosotros2.png">
+  <img src="../img/nosotros2.png">
 
-  </a>
+</div>
 
   <div class="card card-color fila3">
 
@@ -159,51 +140,22 @@
 
 </section>
 
-<!-- JS para rotar imágenes con fade -->
-<script>
-  const cards = document.querySelectorAll('a.card');
-
-  cards.forEach(card => {
-    const imgTag = card.querySelector('img');
-    const imagenes = JSON.parse(card.dataset.imagenes);
-    let index = 0;
-
-    // crear efecto fade
-    imgTag.style.transition = "opacity 1s";
-
-    setInterval(() => {
-      imgTag.style.opacity = 0; 
-      setTimeout(() => {
-        index = (index + 1) % imagenes.length; 
-        imgTag.src = imagenes[index];
-        imgTag.style.opacity = 1; 
-      }, 500); 
-    }, 4000); 
-  });
-</script>
 
 
 
-  <!-- ===== MISIÓN / VISIÓN / PILARES ===== -->
   <section class="mision-vision-pilares">
 
     <div class="contenedor-seccion">
 
       <div class="bloque mvp">
 
-        <div class="icono">
-          <img src="../img/manos.png" alt="Misión">
-        </div>
-
-        <div class="contenido">
-
+       
           <h3>Misión</h3>
 
           <p>
             Brindar productos tecnológicos innovadores y de calidad.
           </p>
 
-        </div>
 
       </div>
 
@@ -211,7 +163,7 @@
       <div class="bloque mvp">
 
         <div class="icono">
-          <img src="../img/focos.png" alt="Visión">
+        
         </div>
 
         <div class="contenido">
@@ -230,7 +182,7 @@
       <div class="bloque mvp">
 
         <div class="icono">
-          <img src="../img/pilares.png" alt="Pilares">
+         
         </div>
 
         <div class="contenido">
@@ -256,8 +208,6 @@
 
   
 
-<!-- FOOTER -->
-<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-container">
 

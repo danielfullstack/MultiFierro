@@ -1,0 +1,310 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  overflow-x: hidden;
+}
+
+.pagina-nosotros .portada-nosotros{
+  position: relative;
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: cambiarFondo 5s infinite;
+  padding: 20px;
+}
+
+.pagina-nosotros .texto-portada{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+  width: 90%;
+  max-width: 600px;
+}
+
+@keyframes cambiarFondo{
+
+  0%{
+    background-image: url("../img/nosotros1.png");
+  }
+
+  33%{
+    background-image: url("../img/nosotros2.png");
+  }
+
+  66%{
+    background-image: url("../img/nosotros3.png");
+  }
+
+  100%{
+    background-image: url("../img/nosotros1.png");
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.pagina-nosotros .portada-nosotros {
+  padding-left: 20px;   
+}
+.pagina-nosotros .subtitulo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e6b514;
+}
+.pagina-nosotros .titulo {
+  font-size: 50px;
+  margin: 10px 0;
+  letter-spacing: 2px;
+  font-weight: 800; 
+}
+
+.pagina-nosotros .descripcion-portada {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.pagina-nosotros .descripcion-secundaria {
+  text-transform: lowercase;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+
+.pagina-nosotros .empresa {
+  font-weight: bold;
+}
+
+
+.pagina-nosotros .galeria-grid .card.card-color p {
+  color: #000000;           
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 16px;
+  text-transform: lowercase; 
+  margin-bottom: 10px;
+}
+
+.pagina-nosotros .galeria-grid .card.card-color p::first-letter {
+  text-transform: uppercase;
+}
+
+.pagina-nosotros .galeria-grid .card.card-color p strong {
+  font-weight: 900 !important;          
+  text-transform: uppercase !important;  
+  color: #000000 !important;             
+}
+
+
+.pagina-nosotros .galeria-grid .card.card-color:last-of-type p {
+  color: #000000;       
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.mision-vision-pilares{
+  background: linear-gradient(
+    to right,
+    #f5d74f 0%,
+    #f5d74f 33%,
+    #e6b514 33%,
+    #e6b514 66%,
+    #d4a500 66%,
+    #d4a500 100%
+  );
+
+  padding: 30px 20px;
+  text-align: center;
+
+}
+
+.mision-vision-pilares .contenedor-seccion{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+.mision-vision-pilares .bloque{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 350px;
+  padding: 40px 30px;
+  transition: 0.4s;
+}
+
+.mision-vision-pilares .bloque:hover{
+  transform: translateY(-10px);
+}
+
+.mision-vision-pilares .bloque img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+
+.mision-vision-pilares .bloque:hover img{
+  transform: rotate(5deg) scale(1.05);
+}
+
+.mision-vision-pilares .bloque h3{
+  font-size: 30px;
+  color: #060e7e;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.mision-vision-pilares .bloque h3::after{
+  content: "/";
+  margin-left: 10px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.mision-vision-pilares .bloque:hover h3::after{
+  opacity: 1;
+}
+
+.mision-vision-pilares .bloque p,
+.mision-vision-pilares .bloque ul{
+  color: #060e7e;
+  line-height: 1.6;
+  font-size: 17px;
+  text-align: center;
+}
+
+.mision-vision-pilares .bloque ul{
+  list-style: none;
+  padding: 0;
+}
+
+
+.pagina-nosotros .galeria-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 90%;
+  margin: 80px auto;
+}
+.pagina-nosotros .galeria-grid .card{
+  height: 350px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.pagina-nosotros .galeria-grid .card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 30px;
+}
+
+
+.pagina-nosotros .card-color{
+  background: #f3efef;
+  color: #060e7e;
+  padding: 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px) {
+
+  html, body{
+    overflow-x: hidden;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .pagina-nosotros .portada-nosotros{
+    min-height: 420px;
+    padding: 20px;
+  }
+
+  .pagina-nosotros .texto-portada{
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .pagina-nosotros .titulo{
+    font-size: 28px;
+  }
+
+  .pagina-nosotros .subtitulo{
+    font-size: 16px;
+  }
+
+  .pagina-nosotros .descripcion-portada{
+    font-size: 14px;
+  }
+
+  .pagina-nosotros .galeria-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pagina-nosotros .galeria-grid .card{
+    height: auto;
+  }
+
+  .pagina-nosotros .galeria-grid .card img{
+    height: 220px;
+  }
+
+  .mision-vision-pilares .contenedor-seccion{
+    grid-template-columns: 1fr;
+  }
+
+  .mision-vision-pilares .bloque{
+    padding: 30px 15px;
+    min-height: auto;
+  }
+
+  .mision-vision-pilares .bloque h3{
+    font-size: 24px;
+  }
+
+  .mision-vision-pilares .bloque p,
+  .mision-vision-pilares .bloque ul{
+    font-size: 15px;
+  }
+
+  .footer-container{
+    flex-direction: column;
+    gap: 20px;
+  }
+}

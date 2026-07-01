@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "nombre": "Taladro Percutor Bosch GSB 13 RE",
+    "categoria": "Herramientas Eléctricas",
+    "descripcion": "Taladro percutor profesional de 650W con velocidad variable.",
+    "precio": 249.90,
+    "stock": 12,
+    "imagen": "https://oechsle.vteximg.com.br/arquivos/ids/22698164-1000-1000/imageUrl_1.jpg?v=638969258350400000"
+  },
+  {
+    "id": 2,
+    "nombre": "Amoladora Makita 9557HPG",
+    "categoria": "Herramientas Eléctricas",
+    "descripcion": "Amoladora angular de 840W para corte y desbaste.",
+    "precio": 329.00,
+    "stock": 8,
+    "imagen": "https://oechsle.vteximg.com.br/arquivos/ids/20115196-1000-1000/image-218a27b8a1d442fca7c7b4cb71425db8.jpg?v=638685676182130000"
+  },
+  {
+    "id": 3,
+    "nombre": "Martillo Stanley 16 oz",
+    "categoria": "Herramientas Manuales",
+    "descripcion": "Martillo con mango ergonómico y cabeza de acero forjado.",
+    "precio": 39.90,
+    "stock": 30,
+    "imagen": "https://promart.vteximg.com.br/arquivos/ids/9115533-1000-1000/91113.jpg?v=638882939765870000"
+  },
+  {
+    "id": 4,
+    "nombre": "Juego de Destornilladores Tramontina",
+    "categoria": "Herramientas Manuales",
+    "descripcion": "Juego de 6 destornilladores planos y estrella.",
+    "precio": 59.90,
+    "stock": 20,
+    "imagen": "https://images.unsplash.com/photo-1581147036324-c1c6d0c5f4d7?w=600"
+  },
+  {
+    "id": 5,
+    "nombre": "Llave Francesa 12\"",
+    "categoria": "Herramientas Manuales",
+    "descripcion": "Llave ajustable de acero cromado.",
+    "precio": 45.50,
+    "stock": 18,
+    "imagen": "https://images.unsplash.com/photo-1561144257-e32e8efc6c4f?w=600"
+  },
+  {
+    "id": 6,
+    "nombre": "Pintura Látex Blanca 1 Galón",
+    "categoria": "Pinturas",
+    "descripcion": "Pintura para interiores y exteriores de alta cobertura.",
+    "precio": 79.90,
+    "stock": 40,
+    "imagen": "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600"
+  },
+  {
+    "id": 7,
+    "nombre": "Rodillo para Pintura 9\"",
+    "categoria": "Pinturas",
+    "descripcion": "Rodillo profesional para acabados uniformes.",
+    "precio": 18.90,
+    "stock": 35,
+    "imagen": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600"
+  },
+  {
+    "id": 8,
+    "nombre": "Casco de Seguridad",
+    "categoria": "Seguridad Industrial",
+    "descripcion": "Casco de protección certificado para construcción.",
+    "precio": 34.90,
+    "stock": 25,
+    "imagen": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=600"
+  },
+  {
+    "id": 9,
+    "nombre": "Guantes de Trabajo",
+    "categoria": "Seguridad Industrial",
+    "descripcion": "Guantes reforzados resistentes al desgaste.",
+    "precio": 14.90,
+    "stock": 60,
+    "imagen": "https://images.unsplash.com/photo-1596803244618-8dbee441d70b?w=600"
+  },
+  {
+    "id": 10,
+    "nombre": "Cable Eléctrico 12 AWG",
+    "categoria": "Electricidad",
+    "descripcion": "Cable de cobre para instalaciones eléctricas.",
+    "precio": 7.50,
+    "stock": 150,
+    "imagen": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600"
+  },
+  {
+    "id": 11,
+    "nombre": "Interruptor Simple",
+    "categoria": "Electricidad",
+    "descripcion": "Interruptor empotrable color blanco.",
+    "precio": 9.90,
+    "stock": 80,
+    "imagen": "https://images.unsplash.com/photo-1565636291297-c88115f6a30f?w=600"
+  },
+  {
+    "id": 12,
+    "nombre": "Tubo PVC 1/2\"",
+    "categoria": "Plomería",
+    "descripcion": "Tubo PVC de alta resistencia para agua fría.",
+    "precio": 16.90,
+    "stock": 100,
+    "imagen": "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=600"
+  },
+  {
+    "id": 13,
+    "nombre": "Cemento Portland 42.5 kg",
+    "categoria": "Construcción",
+    "descripcion": "Bolsa de cemento de alta resistencia.",
+    "precio": 34.90,
+    "stock": 200,
+    "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600"
+  },
+  {
+    "id": 14,
+    "nombre": "Carretilla de Construcción",
+    "categoria": "Construcción",
+    "descripcion": "Carretilla metálica reforzada de 90 litros.",
+    "precio": 189.90,
+    "stock": 15,
+    "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600"
+  },
+  {
+    "id": 15,
+    "nombre": "Escalera de Aluminio 6 Pasos",
+    "categoria": "Accesorios",
+    "descripcion": "Escalera plegable de aluminio de alta resistencia.",
+    "precio": 279.90,
+    "stock": 10,
+    "imagen": "https://images.unsplash.com/photo-1581093588401-16ecb9f1d9d7?w=600"
+  }
+]

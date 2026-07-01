@@ -1,8 +1,7 @@
-
 .bienvenida {
   padding: 50px 20px;
   background-color: #f9f9f9;
-  text-align: center; 
+  text-align: center;
 }
 
 .contenedor-inicio {
@@ -12,13 +11,13 @@
 
 .contenedor-inicio h1 {
   font-size: 2.8rem;
-  color: #003092; 
+  color: #003092;
   margin-bottom: 10px;
 }
 
 .contenedor-inicio .frase-corta {
   font-size: 1.3rem;
-  color: #e6b514; 
+  color: #e6b514;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -43,7 +42,7 @@
 
 .boton-productos:hover {
   background-color: #e6b514;
-  color: #000; 
+  color: #000;
 }
 
 
@@ -56,25 +55,27 @@
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden; /* Oculta las fotos que quedan fuera de la vista */
+  overflow: hidden;
+  /* Oculta las fotos que quedan fuera de la vista */
   border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .bloque-imagenes {
   display: flex;
-  width: 300%; 
-  transition: transform 0.5s ease-in-out; /* para que el deslizamiento no sea rapidoo sino suavee */
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+  /* para que el deslizamiento no sea rapidoo sino suavee */
 }
 
 .cada-foto {
-  width: 33.333%; 
+  width: 33.333%;
   position: relative;
 }
 
 .cada-foto img {
   width: 100%;
-  height: 450px; 
+  height: 450px;
   object-fit: cover;
   display: block;
 }
@@ -106,21 +107,22 @@
 
 
 /*para los botones  */
-#foto-1:checked ~ .bloque-imagenes {
+#foto-1:checked~.bloque-imagenes {
   transform: translateX(0%);
 }
 
-#foto-2:checked ~ .bloque-imagenes {
+#foto-2:checked~.bloque-imagenes {
   transform: translateX(-33.333%);
 }
 
-#foto-3:checked ~ .bloque-imagenes {
+#foto-3:checked~.bloque-imagenes {
   transform: translateX(-66.666%);
 }
 
 /*para las flechas */
 .flechas {
-  display: none; /* Oculta todas las flechas por defecto */
+  display: none;
+  /* Oculta todas las flechas por defecto */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -132,9 +134,9 @@
 }
 
 
-#foto-1:checked ~ .flecha-1,
-#foto-2:checked ~ .flecha-2,
-#foto-3:checked ~ .flecha-3 {
+#foto-1:checked~.flecha-1,
+#foto-2:checked~.flecha-2,
+#foto-3:checked~.flecha-3 {
   display: flex;
 }
 
@@ -154,7 +156,7 @@
   user-select: none;
 }
 
-.boton-flecha:hover { 
+.boton-flecha:hover {
   background-color: #e6b514;
   color: #000;
 }
@@ -180,17 +182,242 @@
 }
 
 
-#foto-1:checked ~ .puntos-abajo .p-1,
-#foto-2:checked ~ .puntos-abajo .p-2,
-#foto-3:checked ~ .puntos-abajo .p-3 {
-  background-color: #e6b514; 
+#foto-1:checked~.puntos-abajo .p-1,
+#foto-2:checked~.puntos-abajo .p-2,
+#foto-3:checked~.puntos-abajo .p-3 {
+  background-color: #e6b514;
 }
 
 /* para q se adapte a celular */
 @media (max-width: 768px) {
-  .contenedor-inicio h1 { font-size: 2rem; }
-  .cada-foto img { height: 300px; } /* el banner se hace más pequeño en pantallas chicas */
-  .texto-foto { width: 90%; bottom: 20px; padding: 10px; }
-  .texto-foto h3 { font-size: 1.2rem; }
-  .boton-flecha { width: 40px; height: 40px; font-size: 16px; }
+  .contenedor-inicio h1 {
+    font-size: 2rem;
+  }
+
+  .cada-foto img {
+    height: 300px;
+  }
+
+  /* el banner se hace más pequeño en pantallas chicas */
+  .texto-foto {
+    width: 90%;
+    bottom: 20px;
+    padding: 10px;
+  }
+
+  .texto-foto h3 {
+    font-size: 1.2rem;
+  }
+
+  .boton-flecha {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+
+.seccion-contacto {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.contenedor-formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor-formulario h2 {
+  color: #003092;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.grupo-input {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grupo-input label {
+  font-weight: bold;
+  color: #1e293b;
+  font-size: 1rem;
+}
+
+/* Cajas de texto y Select */
+.grupo-input input[type="text"],
+.grupo-input select {
+  padding: 12px;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+
+.grupo-input input[type="text"]:focus,
+.grupo-input select:focus {
+  outline: none;
+  border-color: #003092;
+  box-shadow: 0 0 0 3px rgba(0, 48, 146, 0.2);
+}
+
+/* Estilos para los Radios y Checkbox */
+.grupo-input label input[type="radio"],
+.grupo-input label input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Botón de Enviar */
+.boton-enviar {
+  width: 100%;
+  padding: 14px;
+  background-color: #003092;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background-color: #FEC400;
+  color: #1e293b;
+  transform: translateY(-2px);
+  /* Pequeña transformación CSS */
+}
+
+/* Caja de Resultados dinámicos (Manipulada por JS) */
+#caja-resultado h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+#caja-resultado p {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  border-bottom: 1px dashed rgba(15, 81, 50, 0.2);
+  padding-bottom: 4px;
+}
+
+
+
+.busqueda-herramientas {
+
+  max-width: 900px;
+  margin: 50px auto;
+
+  background: white;
+
+  padding: 35px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+
+}
+
+.busqueda-herramientas h2 {
+
+  text-align: center;
+
+  color: #003092;
+
+  margin-bottom: 30px;
+
+}
+
+.grupo-formulario {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+  flex-wrap: wrap;
+
+}
+
+.columna {
+
+  flex: 1;
+
+  min-width: 220px;
+
+}
+
+.columna h3 {
+
+  margin-bottom: 15px;
+
+  color: #003092;
+
+}
+
+.columna label {
+
+  display: block;
+
+  margin-bottom: 12px;
+
+  cursor: pointer;
+
+}
+
+.btn-consultar {
+
+  display: block;
+
+  margin: 35px auto 20px;
+
+  background: #003092;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 35px;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+}
+
+.btn-consultar:hover {
+
+  background: #FEC400;
+
+  color: black;
+
+}
+
+#resultado {
+
+  margin-top: 20px;
+
+  text-align: center;
+
+  font-size: 17px;
+
+  color: #333;
+
+  font-weight: bold;
+
 }

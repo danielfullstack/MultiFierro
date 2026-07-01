@@ -71,20 +71,28 @@
       </div>
 
       <div class="contacto-form">
-        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Mensaje enviado');">
+        <form id="contacto-form" novalidate>
           <div class="form-group">
             <label for="nombre">Nombre Completo</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+            <span class="error-msg" id="error-nombre"></span>
           </div>
 
           <div class="form-group">
             <label for="email">Correo Electrónico</label>
-            <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu email">
+            <span class="error-msg" id="error-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono" placeholder="Ingresa tu teléfono (9 dígitos)">
+            <span class="error-msg" id="error-telefono"></span>
           </div>
 
           <div class="form-group">
             <label for="asunto">Asunto</label>
-            <select id="asunto" name="asunto" required>
+            <select id="asunto" name="asunto">
               <option value="" disabled selected>Selecciona un asunto</option>
               <option value="cotizacion">Solicitar Cotización</option>
               <option value="ventas">Consulta de Ventas</option>
@@ -92,15 +100,78 @@
               <option value="reclamo">Reclamos o Devoluciones</option>
               <option value="otros">Otros</option>
             </select>
+            <span class="error-msg" id="error-asunto"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Tipo de Cliente</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="tipoCliente" value="Natural"> Persona Natural
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="tipoCliente" value="Jurídica"> Empresa (Persona Jurídica)
+              </label>
+            </div>
+            <span class="error-msg" id="error-tipoCliente"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Intereses comerciales</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="intereses" value="Herramientas"> Herramientas
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="intereses" value="Materiales"> Materiales
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="intereses" value="Seguridad"> Seguridad
+              </label>
+            </div>
+            <span class="error-msg" id="error-intereses"></span>
           </div>
 
           <div class="form-group">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <span class="error-msg" id="error-mensaje"></span>
           </div>
 
-          <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+          <div class="form-group terms-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="terminos" name="terminos"> Acepto las políticas de privacidad y términos
+            </label>
+            <span class="error-msg" id="error-terminos"></span>
+          </div>
+
+          <button type="submit" class="btn-enviar">Guardar Registro</button>
         </form>
+      </div>
+    </div>
+
+    <!-- TABLA DE CONTACTOS GUARDADOS -->
+    <div class="tabla-contactos-section">
+      <h2>Registros de Contacto Guardados</h2>
+      <div class="table-responsive">
+        <table class="tabla-resultados" id="tabla-contactos">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Teléfono</th>
+              <th>Asunto</th>
+              <th>Cliente</th>
+              <th>Intereses</th>
+              <th>Mensaje</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-body-contactos">
+            <tr>
+              <td colspan="7" class="tabla-vacia">No hay registros guardados. Completa el formulario de arriba.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </main>
@@ -148,6 +219,7 @@
   </footer>
 
   <script src="../js/js.js"></script>
+  <script src="../js/contacto.js"></script>
 
 </body>
 

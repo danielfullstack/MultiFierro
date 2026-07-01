@@ -1,9 +1,3 @@
-/**
- * Script de validación y gestión del Formulario de Contacto
- * MultiFierro
- */
-
-// Arreglo en memoria para almacenar los contactos guardados
 const contactosGuardados = [];
 
 document.addEventListener("DOMContentLoaded", () => {

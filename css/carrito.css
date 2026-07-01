@@ -273,3 +273,167 @@
         font-size: 1.15rem;
     }
 }
+
+@media (max-width: 520px) {
+    .carrito-main {
+        padding: 30px 12px;
+    }
+
+    .carrito-main h1 {
+        font-size: 1.45rem;
+        margin-bottom: 20px;
+    }
+
+    .carrito-container {
+        gap: 18px;
+    }
+
+    .carrito-table-wrapper {
+        width: 100%;
+        overflow-x: visible;
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .carrito-table,
+    .carrito-table thead,
+    .carrito-table tbody,
+    .carrito-table tr,
+    .carrito-table td {
+        display: block;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .carrito-table thead {
+        display: none;
+    }
+
+    .carrito-table tbody tr {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        margin-bottom: 14px;
+        padding: 12px;
+    }
+
+    .carrito-table tbody tr:hover {
+        background: #fff;
+    }
+
+    .carrito-table td {
+        border-bottom: none;
+        padding: 8px 0;
+    }
+
+    .carrito-table td:not(:first-child) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        color: #1e293b;
+        font-size: 0.95rem;
+    }
+
+    .carrito-table td:not(:first-child)::before {
+        color: #64748b;
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .carrito-table td:nth-child(2)::before {
+        content: "Precio";
+    }
+
+    .carrito-table td:nth-child(3)::before {
+        content: "Cantidad";
+    }
+
+    .carrito-table td:nth-child(4)::before {
+        content: "Subtotal";
+    }
+
+    .carrito-table td:nth-child(5)::before {
+        content: "Acciones";
+    }
+
+    .producto-col {
+        width: 100%;
+    }
+
+    .producto-info {
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .producto-img {
+        width: 72px;
+        height: 72px;
+        border-radius: 9px;
+    }
+
+    .producto-info h4 {
+        font-size: 0.95rem;
+        line-height: 1.25;
+    }
+
+    .text-sm {
+        font-size: 0.78rem;
+    }
+
+    .cantidad-control button {
+        min-width: 38px;
+        min-height: 38px;
+        padding: 9px 12px;
+    }
+
+    .cantidad-control input {
+        width: 40px;
+        min-height: 38px;
+        padding: 9px 0;
+    }
+
+    .btn-eliminar {
+        min-width: 40px;
+        min-height: 40px;
+        padding: 9px 12px;
+    }
+
+    .carrito-vacio {
+        display: block;
+        padding: 28px 16px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .carrito-vacio::before {
+        content: none;
+    }
+
+    .carrito-resumen {
+        width: 100%;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .carrito-resumen h3 {
+        font-size: 1.2rem;
+        margin-bottom: 18px;
+    }
+
+    .resumen-item {
+        font-size: 0.95rem;
+    }
+
+    .resumen-item.total {
+        font-size: 1.08rem;
+    }
+
+    .btn-pagar {
+        padding: 13px;
+        font-size: 1rem;
+    }
+}

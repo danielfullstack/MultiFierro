@@ -51,7 +51,6 @@
       <p>Descubre nuestras instalaciones, herramientas de primera calidad y los grandes proyectos que nuestros clientes
         han hecho realidad con MultiFierro.</p>
 
-      <!-- Filtros sugeridos para la galería -->
       <div class="galeria-filtros">
         <button class="filtro activo">Todos</button>
         <button class="filtro">Nuestra Tienda</button>
@@ -60,76 +59,84 @@
       </div>
     </section>
 
-    <section class="galeria-grid">
-      <!-- Item 1: Tienda -->
-      <div class="galeria-item">
-        <img
-          src="https://images.unsplash.com/photo-1581166397057-235af2b3c6dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-          alt="Tienda de ferretería" class="img-galeria">
-        <div class="item-info">
-          <h3>Pasillos de Ferretería</h3>
-          <p>Amplia variedad en stock</p>
-        </div>
-      </div>
+    <section class="galeria-grid" id="galeria-grid">
+    </section>
 
-      <!-- Item 2: Herramientas -->
-      <div class="galeria-item">
-        <img
-          src="https://images.unsplash.com/photo-1504148455328-c376907d081c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-          alt="Herramientas" class="img-galeria">
-        <div class="item-info">
-          <h3>Taladros de Impacto</h3>
-          <p>Potencia y precisión</p>
-        </div>
-      </div>
+    <section class="galeria-registro-section">
+      <h2>Agregar Nueva Imagen a la Galería</h2>
+      <p class="section-desc">Completa los campos para agregar un nuevo elemento a la galería en tiempo real.</p>
 
-      <!-- Item 3: Proyectos -->
-      <div class="galeria-item">
-        <img
-          src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-          alt="Proyecto remodelación" class="img-galeria">
-        <div class="item-info">
-          <h3>Remodelación de Cocina</h3>
-          <p>Materiales de MultiFierro</p>
-        </div>
-      </div>
+      <form id="registro-galeria-form" class="galeria-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="titulo">Título de la Imagen</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Ej. Sierra Circular 18V">
+            <span class="error-msg" id="error-titulo"></span>
+          </div>
 
-      <!-- Item 4: Tienda -->
-      <div class="galeria-item">
-        <img
-          src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-          alt="Pinturas" class="img-galeria">
-        <div class="item-info">
-          <h3>Sección de Pinturas</h3>
-          <p>Todos los colores disponibles</p>
+          <div class="form-group">
+            <label for="url">URL de la Imagen</label>
+            <input type="text" id="url" name="url" placeholder="Ej. https://images.unsplash.com/photo-...">
+            <span class="error-msg" id="error-url"></span>
+          </div>
         </div>
-      </div>
 
-      <!-- Item 5: Herramientas -->
-      <div class="galeria-item">
-        <img
-          src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-          alt="Materiales de construcción" class="img-galeria">
-        <div class="item-info">
-          <h3>Materiales de Construcción</h3>
-          <p>Calidad garantizada</p>
-        </div>
-      </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="categoria">Categoría</label>
+            <select id="categoria" name="categoria">
+              <option value="" disabled selected>Selecciona una categoría</option>
+              <option value="Nuestra Tienda">Nuestra Tienda</option>
+              <option value="Herramientas">Herramientas</option>
+              <option value="Proyectos de Clientes">Proyectos de Clientes</option>
+            </select>
+            <span class="error-msg" id="error-categoria"></span>
+          </div>
 
-      <!-- Item 6: Equipo -->
-      <div class="galeria-item">
-        <img
-          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-          alt="Equipo asesor" class="img-galeria">
-        <div class="item-info">
-          <h3>Asesoramiento Experto</h3>
-          <p>Nuestro equipo en acción</p>
+          <div class="form-group">
+            <label for="descripcion">Descripción Breve</label>
+            <input type="text" id="descripcion" name="descripcion" placeholder="Ej. Alto rendimiento y precisión">
+            <span class="error-msg" id="error-descripcion"></span>
+          </div>
         </div>
-      </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Tamaño de Visualización</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="tamano" value="Estándar"> Estándar
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="tamano" value="Destacado"> Destacado
+              </label>
+            </div>
+            <span class="error-msg" id="error-tamano"></span>
+          </div>
+
+          <div class="form-group">
+            <label>Etiquetas Especiales</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="etiquetas" value="Nuevo"> Nuevo
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="etiquetas" value="Popular"> Popular
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="etiquetas" value="Recomendado"> Recomendado
+              </label>
+            </div>
+            <span class="error-msg" id="error-etiquetas"></span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-agregar">Agregar Imagen a Galería</button>
+      </form>
     </section>
   </main>
 
-  <!-- FOOTER -->
+
   <footer class="footer">
     <div class="footer-container">
 
@@ -172,6 +179,7 @@
   </footer>
 
   <script src="../js/js.js"></script>
+  <script src="../js/galeria.js"></script>
 
 </body>
 

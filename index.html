@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,148 +12,230 @@
 
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <img src="./img/logo_blanco.png" alt="Logo MultiFierro">
-      </div>
-
-      <div class="menu-toggle" id="menu-toggle">
-        ☰
-      </div>
-
-      <ul class="nav-links" id="nav-links">
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./pages/productos.html">Productos</a></li>
-        <li><a href="./pages/galeria.html">Galería</a></li>
-        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
-
-      <div class="nav-extra">
-        <input type="text" placeholder="Buscar...">
-        <button>🔍</button>
-      </div>
-    </div>
-  </nav>
-</header>
-
-<main>
-  <section class="bienvenida">
-    <div class="contenedor-inicio">
-      <h1>Bienvenidos a MultiFierro</h1>
-      <p class="frase-corta">Encuentra las mejores herramientas y materiales para tus trabajos</p>
-      <p class="texto-intro">
-        Somos una tienda de confianza donde podrás encontrar una gran variedad de herramientas 
-        para el hogar, talleres y construcción. Nos esforzamos por ofrecer productos de buena calidad 
-        y a precios justos para ayudarte a terminar todos tus proyectos con éxito.
-      </p>
-      <a href="./pages/productos.html" class="boton-productos">Ver Catálogo de Productos</a>
-    </div>
-  </section>
-
-  <section class="seccion-carrusel">
-    <div class="caja-carrusel">
-      
-      <input type="radio" name="control-fotos" id="foto-1" checked hidden>
-      <input type="radio" name="control-fotos" id="foto-2" hidden>
-      <input type="radio" name="control-fotos" id="foto-3" hidden>
-
-      <div class="bloque-imagenes">
-        
-        <div class="cada-foto">
-          <img src="https://images.unsplash.com/photo-1513467655676-561b7d489a88?q=80&w=1200&auto=format&fit=crop" alt="Herramientas Manuales">
-          <div class="texto-foto">
-            <h3>Herramientas Manuales</h3>
-            <p>Todo lo básico que necesitas para tu caja de herramientas en casa o taller.</p>
-          </div>
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="./img/logo_blanco.png" alt="Logo MultiFierro">
         </div>
 
-        <div class="cada-foto">
-          <img src="https://images.unsplash.com/photo-1540103711724-ebf833bde8d1?q=80&w=1200&auto=format&fit=crop" alt="Herramientas de Medición">
-          <div class="texto-foto">
-            <h3>Herramientas de Medición</h3>
-            <p>Instrumentos precisos para tomar medidas exactas en tus trabajos.</p>
-          </div>
+        <div class="menu-toggle" id="menu-toggle">
+          ☰
         </div>
 
-        <div class="cada-foto">
-          <img src="https://images.unsplash.com/photo-1602052793312-b99c2a9ee797?q=80&w=1200&auto=format&fit=crop" alt="Herramientas Eléctricas">
-          <div class="texto-foto">
-            <h3>Herramientas Eléctricas</h3>
-            <p>Taladros y equipos a batería para avanzar tus proyectos más rápido.</p>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./pages/productos.html">Productos</a></li>
+          <li><a href="./pages/galeria.html">Galería</a></li>
+          <li><a href="./pages/nosotros.html">Nosotros</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+
+        <div class="nav-extra">
+          <input type="text" placeholder="Buscar...">
+          <button>🔍</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bienvenida">
+      <div class="contenedor-inicio">
+        <h1>Bienvenidos a MultiFierro</h1>
+        <p class="frase-corta">Encuentra las mejores herramientas y materiales para tus trabajos</p>
+        <p class="texto-intro">
+          Somos una tienda de confianza donde podrás encontrar una gran variedad de herramientas
+          para el hogar, talleres y construcción. Nos esforzamos por ofrecer productos de buena calidad
+          y a precios justos para ayudarte a terminar todos tus proyectos con éxito.
+        </p>
+        <a href="./pages/productos.html" class="boton-productos">Ver Catálogo de Productos</a>
+      </div>
+    </section>
+
+
+    <section class="busqueda-herramientas">
+
+      <h2>Encuentra la herramienta ideal</h2>
+
+      <form id="formBusqueda">
+
+        <div class="grupo-formulario">
+
+          <div class="columna">
+
+            <h3>⚒️ ¿Qué tipo de herramientas buscas?</h3>
+
+            <label>
+              <input type="radio" name="herramienta" value="Herramientas Manuales">
+              Herramientas Manuales
+            </label>
+
+            <label>
+              <input type="radio" name="herramienta" value="Herramientas Eléctricas">
+              Herramientas Eléctricas
+            </label>
+
+            <label>
+              <input type="radio" name="herramienta" value="Herramientas de Medición">
+              Herramientas de Medición
+            </label>
+
           </div>
+
+          <div class="columna">
+
+            <h3>🌎 ¿Origen de los productos?</h3>
+
+            <label>
+              <input type="radio" name="origen" value="Nacional">
+              Nacional
+            </label>
+
+            <label>
+              <input type="radio" name="origen" value="Importada">
+              Importada
+            </label>
+
+          </div>
+
+          <div class="columna">
+
+            <h3>🛠 Servicios adicionales</h3>
+
+            <label>
+              <input type="checkbox" id="delivery">
+              Delivery
+            </label>
+
+            <label>
+              <input type="checkbox" id="asesoria">
+              Asesoría Técnica
+            </label>
+
+            <label>
+              <input type="checkbox" id="instalacion">
+              Instalación
+            </label>
+
+          </div>
+
+        </div>
+
+        <button type="button" class="btn-consultar" onclick="mostrar()">
+          Consultar
+        </button>
+
+      </form>
+
+      <div id="resultado"></div>
+
+    </section>
+
+    <section class="seccion-carrusel">
+      <div class="caja-carrusel">
+
+        <input type="radio" name="control-fotos" id="foto-1" checked hidden>
+        <input type="radio" name="control-fotos" id="foto-2" hidden>
+        <input type="radio" name="control-fotos" id="foto-3" hidden>
+
+        <div class="bloque-imagenes">
+
+          <div class="cada-foto">
+            <img src="https://images.unsplash.com/photo-1513467655676-561b7d489a88?q=80&w=1200&auto=format&fit=crop"
+              alt="Herramientas Manuales">
+            <div class="texto-foto">
+              <h3>Herramientas Manuales</h3>
+              <p>Todo lo básico que necesitas para tu caja de herramientas en casa o taller.</p>
+            </div>
+          </div>
+
+          <div class="cada-foto">
+            <img src="https://images.unsplash.com/photo-1540103711724-ebf833bde8d1?q=80&w=1200&auto=format&fit=crop"
+              alt="Herramientas de Medición">
+            <div class="texto-foto">
+              <h3>Herramientas de Medición</h3>
+              <p>Instrumentos precisos para tomar medidas exactas en tus trabajos.</p>
+            </div>
+          </div>
+
+          <div class="cada-foto">
+            <img src="https://images.unsplash.com/photo-1602052793312-b99c2a9ee797?q=80&w=1200&auto=format&fit=crop"
+              alt="Herramientas Eléctricas">
+            <div class="texto-foto">
+              <h3>Herramientas Eléctricas</h3>
+              <p>Taladros y equipos a batería para avanzar tus proyectos más rápido.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="flechas flecha-1">
+          <label for="foto-3" class="boton-flecha">❮</label>
+          <label for="foto-2" class="boton-flecha">❯</label>
+        </div>
+        <div class="flechas flecha-2">
+          <label for="foto-1" class="boton-flecha">❮</label>
+          <label for="foto-3" class="boton-flecha">❯</label>
+        </div>
+        <div class="flechas flecha-3">
+          <label for="foto-2" class="boton-flecha">❮</label>
+          <label for="foto-1" class="boton-flecha">❯</label>
+        </div>
+
+        <div class="puntos-abajo">
+          <label for="foto-1" class="punto p-1"></label>
+          <label for="foto-2" class="punto p-2"></label>
+          <label for="foto-3" class="punto p-3"></label>
         </div>
 
       </div>
+    </section>
+  </main>
 
-      <div class="flechas flecha-1">
-        <label for="foto-3" class="boton-flecha">❮</label>
-        <label for="foto-2" class="boton-flecha">❯</label>
-      </div>
-      <div class="flechas flecha-2">
-        <label for="foto-1" class="boton-flecha">❮</label>
-        <label for="foto-3" class="boton-flecha">❯</label>
-      </div>
-      <div class="flechas flecha-3">
-        <label for="foto-2" class="boton-flecha">❮</label>
-        <label for="foto-1" class="boton-flecha">❯</label>
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-section">
+        <h3>MultiFierro</h3>
+        <p>Tu tienda de herramientas y materiales de confianza.</p>
       </div>
 
-      <div class="puntos-abajo">
-        <label for="foto-1" class="punto p-1"></label>
-        <label for="foto-2" class="punto p-2"></label>
-        <label for="foto-3" class="punto p-3"></label>
+      <div class="footer-section">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./pages/productos.html">Productos</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Contacto</h4>
+        <p>Email: multifierro@gmail.com</p>
+        <p>Tel: 123123123</p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Síguenos</h4>
+        <div class="social">
+          <a href="#"><img src="./img/svg/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="./img/svg/icons8-tik-tok.svg" alt="TikTok"></a>
+          <a href="#"><img src="./img/svg/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="./img/svg/twitter.svg" alt="Twitter"></a>
+          <a href="#"><img src="./img/svg/youtube-play.svg" alt="YouTube"></a>
+        </div>
       </div>
 
     </div>
-  </section>
-</main>
 
-<footer class="footer">
-  <div class="footer-container">
-
-    <div class="footer-section">
-      <h3>MultiFierro</h3>
-      <p>Tu tienda de herramientas y materiales de confianza.</p>
+    <div class="footer-bottom">
+      <p>2026 MultiFierro - Todos los derechos reservados</p>
     </div>
+  </footer>
 
-    <div class="footer-section">
-      <h4>Enlaces</h4>
-      <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./pages/productos.html">Productos</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-section">
-      <h4>Contacto</h4>
-      <p>Email: multifierro@gmail.com</p>
-      <p>Tel: 123123123</p>
-    </div>
-
-    <div class="footer-section">
-      <h4>Síguenos</h4>
-      <div class="social">
-        <a href="#"><img src="./img/svg/facebook.svg" alt="Facebook"></a>
-        <a href="#"><img src="./img/svg/icons8-tik-tok.svg" alt="TikTok"></a>
-        <a href="#"><img src="./img/svg/instagram.svg" alt="Instagram"></a>
-        <a href="#"><img src="./img/svg/twitter.svg" alt="Twitter"></a>
-        <a href="#"><img src="./img/svg/youtube-play.svg" alt="YouTube"></a>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>2026 MultiFierro - Todos los derechos reservados</p>
-  </div>
-</footer>
-
-<script src="./js/js.js"></script>
+  <script src="./js/js.js"></script>
 </body>
+
 </html>
-
-

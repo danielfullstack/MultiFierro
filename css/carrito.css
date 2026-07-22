@@ -122,7 +122,7 @@
     padding: 8px 0;
     background: white;
     color: #1e293b;
-    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
 .cantidad-control input::-webkit-outer-spin-button,

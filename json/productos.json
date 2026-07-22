@@ -133,5 +133,185 @@
     "precio": 279.90,
     "stock": 10,
     "imagen": "https://promart.vteximg.com.br/arquivos/ids/7808318-1000-1000/138082.jpg?v=638418829501000000"
-  }
+  },
+{
+  "id": 16,
+  "nombre": "Taladro Percutor 650W",
+  "categoria": "Herramientas eléctricas",
+  "descripcion": "Taladro eléctrico con función percutora y velocidad regulable.",
+  "precio": 189.90,
+  "stock": 15,
+  "imagen": "https://promart.vteximg.com.br/arquivos/ids/8637428/imageUrl_1.jpg?v=638767617711370000"
+},
+{
+  "id": 17,
+  "nombre": "Juego de Destornilladores",
+  "categoria": "Herramientas manuales",
+  "descripcion": "Juego de seis destornilladores planos y estrella.",
+  "precio": 49.90,
+  "stock": 30,
+  "imagen": "https://production-tailoy-repo-magento-statics.s3.amazonaws.com/imagenes/872x872/productos/i/j/u/juego-de-destornilladores-15-en-1-rojo-85482-default-1.jpg"
+},
+{
+  "id": 18,
+  "nombre": "Martillo de Carpintero",
+  "categoria": "Herramientas manuales",
+  "descripcion": "Martillo con mango ergonómico y cabeza de acero.",
+  "precio": 39.90,
+  "stock": 25,
+  "imagen": "https://promart.vteximg.com.br/arquivos/ids/2770371-1000-1000/139231.jpg?v=637715698505570000"
+},
+{
+  "id": 19,
+  "nombre": "Caja de Herramientas",
+  "categoria": "Organización",
+  "descripcion": "Caja plástica resistente con compartimentos y asa.",
+  "precio": 79.90,
+  "stock": 18,
+  "imagen": "https://media.falabella.com/falabellaPE/123919268_01/w=1500,h=1500,fit=cover"
+},
+{
+  "id": 20,
+  "nombre": "Alicate Universal 8 pulgadas",
+  "categoria": "Herramientas manuales",
+  "descripcion": "Alicate de acero con mango antideslizante.",
+  "precio": 32.90,
+  "stock": 40,
+  "imagen": "https://promart.vteximg.com.br/arquivos/ids/725105-1000-1000/133235.jpg?v=637484089782470000"
+},
+{
+  "id": 21,
+  "nombre": "Llave Francesa 10 pulgadas",
+  "categoria": "Herramientas manuales",
+  "descripcion": "Llave ajustable fabricada en acero cromado.",
+  "precio": 45.90,
+  "stock": 22,
+  "imagen": "https://promart.vteximg.com.br/arquivos/ids/9115589/20526.jpg?v=638882940560570000"
+},
+{
+  "id": 22,
+  "nombre": "Sierra Circular 1400W",
+  "categoria": "Herramientas eléctricas",
+  "descripcion": "Sierra circular para cortes precisos en madera.",
+  "precio": 349.90,
+  "stock": 8,
+  "imagen": "https://dojiw2m9tvv09.cloudfront.net/76107/product/ts114185261407.png"
+},
+{
+  "id": 23,
+  "nombre": "Amoladora Angular 850W",
+  "categoria": "Herramientas eléctricas",
+  "descripcion": "Amoladora compacta para cortar, pulir y desbastar.",
+  "precio": 219.90,
+  "stock": 12,
+  "imagen": "https://promart.vteximg.com.br/arquivos/ids/6891891-1000-1000/118197.jpg?v=638160943992600000"
+},
+{
+  "id": 24,
+  "nombre": "Cinta Métrica 5 Metros",
+  "categoria": "Medición",
+  "descripcion": "Cinta métrica retráctil con seguro automático.",
+  "precio": 19.90,
+  "stock": 50,
+  "imagen": "https://promart.vteximg.com.br/arquivos/ids/9265194/imageUrl_1.jpg?v=638923916288070000"
+},
+{
+  "id": 25,
+  "nombre": "Nivel de Aluminio 24 pulgadas",
+  "categoria": "Medición",
+  "descripcion": "Nivel resistente con tres burbujas de medición.",
+  "precio": 59.90,
+  "stock": 20,
+  "imagen": "https://cfrouting.zoeysite.com/cdn-cgi/image/format=auto,quality=85,fit=scale-down/https://s3.amazonaws.com/zcom-media/sites/a0i0h00000QJocmAAD/media/catalog/product/a/r/arquivos-ids-157427-stht42074-la.jpg"
+},
+{
+  "id": 26,
+  "nombre": "Set de Brocas para Concreto",
+  "categoria": "Accesorios",
+  "descripcion": "Juego de ocho brocas resistentes para concreto.",
+  "precio": 44.90,
+  "stock": 35,
+  "imagen": "https://promart.vteximg.com.br/arquivos/ids/6891701-1000-1000/103355.jpg?v=638160941888130000"
+},
+{
+  "id": 27,
+  "nombre": "Extensión Eléctrica 10 Metros",
+  "categoria": "Electricidad",
+  "descripcion": "Extensión eléctrica reforzada con tres tomas.",
+  "precio": 69.90,
+  "stock": 24,
+  "imagen": "https://promart.vteximg.com.br/arquivos/ids/6248655/image-b44c6b902c4f4c95b1c09cabbbf297fc.jpg?v=637951705546170000"
+},
+{
+  "id": 28,
+  "nombre": "Guantes de Seguridad",
+  "categoria": "Seguridad",
+  "descripcion": "Guantes protectores con recubrimiento antideslizante.",
+  "precio": 18.90,
+  "stock": 60,
+  "imagen": "https://media.falabella.com/sodimacPE/498912_01/w=1500,h=1500,fit=cover"
+},
+{
+  "id": 29,
+  "nombre": "Casco de Seguridad Industrial",
+  "categoria": "Seguridad",
+  "descripcion": "Casco regulable resistente a golpes e impactos.",
+  "precio": 34.90,
+  "stock": 45,
+  "imagen": "https://promart.vteximg.com.br/arquivos/ids/3206871/12706.jpg?v=637739996483000000"
+},
+{
+  "id": 30,
+  "nombre": "Lentes de Protección",
+  "categoria": "Seguridad",
+  "descripcion": "Lentes transparentes resistentes a impactos y polvo.",
+  "precio": 14.90,
+  "stock": 70,
+  "imagen": "https://dojiw2m9tvv09.cloudfront.net/48473/product/len-2000-ae9037.jpg"
+},
+{
+  "id": 31,
+  "nombre": "Pistola de Silicona 60W",
+  "categoria": "Herramientas eléctricas",
+  "descripcion": "Pistola eléctrica para barras de silicona caliente.",
+  "precio": 54.90,
+  "stock": 28,
+  "imagen": "https://promart.vteximg.com.br/arquivos/ids/713601/134058.jpg?v=637479004704170000"
+},
+{
+  "id": 32,
+  "nombre": "Arco de Sierra Ajustable",
+  "categoria": "Herramientas manuales",
+  "descripcion": "Arco metálico para realizar cortes en diferentes materiales.",
+  "precio": 42.90,
+  "stock": 26,
+  "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiXVmA_pNA8594aStvHIP3dQYbJV-BmrgX2maypnlBDyXVoGX08ypgUgk&s=10"
+},
+{
+  "id": 33,
+  "nombre": "Carretilla de Construcción",
+  "categoria": "Construcción",
+  "descripcion": "Carretilla metálica reforzada para transportar materiales.",
+  "precio": 229.90,
+  "stock": 9,
+  "imagen": "https://plazavea.vteximg.com.br/arquivos/ids/31932800-1000-1000/image-2aec5414a9434f08b38e59bc155ea62b.jpg?v=638914813833930000"
+},
+{
+  "id": 34,
+  "nombre": "Escalera Telescópica 3.8 Metros",
+  "categoria": "Accesorios",
+  "descripcion": "Escalera telescópica de aluminio fácil de transportar.",
+  "precio": 499.90,
+  "stock": 6,
+  "imagen": "https://promart.vteximg.com.br/arquivos/ids/10786196-380-380/imageUrl_1.jpg?v=639154630149400000"
+},
+{
+  "id": 35,
+  "nombre": "Organizador de Tornillos",
+  "categoria": "Organización",
+  "descripcion": "Organizador plástico con múltiples compartimentos.",
+  "precio": 64.90,
+  "stock": 17,
+  "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKUMeNSAfo00NBmRFlsGm-kTVeS-I3GyG2Pz5dMXjqHQ&s=10"
+}
 ]
